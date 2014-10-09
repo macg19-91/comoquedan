@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <p>Hello world! Testing page.</p>
+        <p class='guardarAjax' data-tbl="serviceEquipo/user" style="cursor:pointer;">
+        	Usuario guardar a BD ajax
+        </p>
+        <p class='obtenerTodosAjax' data-tbl="serviceEquipo/user" style="cursor:pointer;">
+            Usuario obtener Todos ajax
+        </p>
+        <p class='obtenerUnoAjax' data-tbl="serviceEquipo/user" style="cursor:pointer;">
+            Usuario obtener Uno ajax
+        </p>
+        <p class='updateUnoAjax' data-tbl="serviceEquipo/user" style="cursor:pointer;">
+            Usuario update Uno ajax
+        </p>
+
+        <script>
+            $(document).ready(function(){
+
+            	$('.guardarAjax').click(function(){
+                    var action = $(this).attr("data-tbl");
+            		$.ajax({
+					    url: '/index.php/api/'+action+'/format/json',
+					    type: 'POST',
+					    data: JSON.stringify({ action: "add", nombre: "root", abrev:"ro" }),
+                        contentType: "application/json",
+					    success: function(result) {
+					        console.log(result);
+					    }
+					});
+            	});
+                $('.obtenerTodosAjax').click(function(){
+                    var action = $(this).attr("data-tbl");
+                    $.ajax({
+                        url: '/index.php/api/'+action+'/format/json',
+                        type: 'GET',
+                        success: function(result) {
+                            console.log(result);
+                        }
+                    });
+                });
+                $('.obtenerUnoAjax').click(function(){
+                    var action = $(this).attr("data-tbl");
+                    $.ajax({
+                        url: '/index.php/api/'+action+'/format/json',
+                        type: 'GET',
+                        data: {idEquipo: "1"},
+                        contentType: "application/json",
+                        success: function(result) {
+                            console.log(result);
+                        }
+                    });
+                });
+                $('.updateUnoAjax').click(function(){
+                    var action = $(this).attr("data-tbl");
+                    $.ajax({
+                        url: '/index.php/api/'+action+'/format/json',
+                        type: 'POST',
+                        data: JSON.stringify({ action: "update", idEquipo: "1", nombre: "root1", abrev:"ro" }),
+                        contentType: "application/json",
+                        success: function(result) {
+                            console.log(result);
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>

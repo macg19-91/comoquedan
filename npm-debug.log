@@ -1,0 +1,204 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'g-',
+1 verbose cli   'grunt' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json cuantoqueda@0.0.0 No description
+6 warn package.json cuantoqueda@0.0.0 No repository field.
+7 warn package.json cuantoqueda@0.0.0 No README data
+8 verbose readDependencies using package.json deps
+9 verbose cache add [ 'g-', null ]
+10 verbose cache add name=undefined spec="g-" args=["g-",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'g-',
+11 verbose parsed url   path: 'g-',
+11 verbose parsed url   href: 'g-' }
+12 verbose cache add [ 'grunt', null ]
+13 verbose cache add name=undefined spec="grunt" args=["grunt",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: 'grunt',
+14 verbose parsed url   path: 'grunt',
+14 verbose parsed url   href: 'grunt' }
+15 silly lockFile e3db23dd-g g-
+16 verbose lock g- C:\Users\rlobo\AppData\Roaming\npm-cache\e3db23dd-g.lock
+17 silly lockFile 20ff3fd8-grunt grunt
+18 verbose lock grunt C:\Users\rlobo\AppData\Roaming\npm-cache\20ff3fd8-grunt.lock
+19 silly lockFile e3db23dd-g g-
+20 silly lockFile e3db23dd-g g-
+21 silly lockFile 20ff3fd8-grunt grunt
+22 silly lockFile 20ff3fd8-grunt grunt
+23 verbose addNamed [ 'g-', '' ]
+24 verbose addNamed [ null, '*' ]
+25 silly lockFile 5c84bb4e-g g-@
+26 verbose lock g-@ C:\Users\rlobo\AppData\Roaming\npm-cache\5c84bb4e-g.lock
+27 verbose addNamed [ 'grunt', '' ]
+28 verbose addNamed [ null, '*' ]
+29 silly lockFile 55f1ff24-grunt grunt@
+30 verbose lock grunt@ C:\Users\rlobo\AppData\Roaming\npm-cache\55f1ff24-grunt.lock
+31 silly addNameRange { name: 'g-', range: '*', hasData: false }
+32 silly addNameRange { name: 'grunt', range: '*', hasData: false }
+33 verbose request where is /g-
+34 verbose request registry https://registry.npmjs.org/
+35 verbose request id ebabd0e7599eb9e2
+36 verbose url raw /g-
+37 verbose url resolving [ 'https://registry.npmjs.org/', './g-' ]
+38 verbose url resolved https://registry.npmjs.org/g-
+39 verbose request where is https://registry.npmjs.org/g-
+40 info trying registry request attempt 1 at 12:45:13
+41 http GET https://registry.npmjs.org/g-
+42 verbose request where is /grunt
+43 verbose request registry https://registry.npmjs.org/
+44 verbose url raw /grunt
+45 verbose url resolving [ 'https://registry.npmjs.org/', './grunt' ]
+46 verbose url resolved https://registry.npmjs.org/grunt
+47 verbose request where is https://registry.npmjs.org/grunt
+48 info trying registry request attempt 1 at 12:45:13
+49 verbose etag "WS6SH3RLX2S29JM53XHYNJ1E"
+50 http GET https://registry.npmjs.org/grunt
+51 http 304 https://registry.npmjs.org/grunt
+52 silly registry.get cb [ 304,
+52 silly registry.get   { date: 'Tue, 07 Oct 2014 18:45:16 GMT',
+52 silly registry.get     server: 'Apache',
+52 silly registry.get     via: '1.1 varnish',
+52 silly registry.get     'last-modified': 'Tue, 07 Oct 2014 18:45:16 GMT',
+52 silly registry.get     'cache-control': 'max-age=60',
+52 silly registry.get     etag: '"WS6SH3RLX2S29JM53XHYNJ1E"',
+52 silly registry.get     'x-served-by': 'cache-jfk1022-JFK',
+52 silly registry.get     'x-cache': 'HIT',
+52 silly registry.get     'x-cache-hits': '1',
+52 silly registry.get     'x-timer': 'S1412707516.174553,VS0,VE78',
+52 silly registry.get     vary: 'Accept',
+52 silly registry.get     'content-length': '0',
+52 silly registry.get     'keep-alive': 'timeout=10, max=50',
+52 silly registry.get     connection: 'Keep-Alive' } ]
+53 verbose etag https://registry.npmjs.org/grunt from cache
+54 http 404 https://registry.npmjs.org/g-
+55 verbose headers { date: 'Tue, 07 Oct 2014 18:45:16 GMT',
+55 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+55 verbose headers   'content-type': 'application/json',
+55 verbose headers   'cache-control': 'max-age=0',
+55 verbose headers   'content-length': '52',
+55 verbose headers   'accept-ranges': 'bytes',
+55 verbose headers   via: '1.1 varnish',
+55 verbose headers   age: '0',
+55 verbose headers   'x-served-by': 'cache-jfk1029-JFK',
+55 verbose headers   'x-cache': 'MISS',
+55 verbose headers   'x-cache-hits': '0',
+55 verbose headers   'x-timer': 'S1412707516.171776,VS0,VE89',
+55 verbose headers   'keep-alive': 'timeout=10, max=50',
+55 verbose headers   connection: 'Keep-Alive' }
+56 silly registry.get cb [ 404,
+56 silly registry.get   { date: 'Tue, 07 Oct 2014 18:45:16 GMT',
+56 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+56 silly registry.get     'content-type': 'application/json',
+56 silly registry.get     'cache-control': 'max-age=0',
+56 silly registry.get     'content-length': '52',
+56 silly registry.get     'accept-ranges': 'bytes',
+56 silly registry.get     via: '1.1 varnish',
+56 silly registry.get     age: '0',
+56 silly registry.get     'x-served-by': 'cache-jfk1029-JFK',
+56 silly registry.get     'x-cache': 'MISS',
+56 silly registry.get     'x-cache-hits': '0',
+56 silly registry.get     'x-timer': 'S1412707516.171776,VS0,VE89',
+56 silly registry.get     'keep-alive': 'timeout=10, max=50',
+56 silly registry.get     connection: 'Keep-Alive' } ]
+57 silly lockFile 5c84bb4e-g g-@
+58 silly lockFile 5c84bb4e-g g-@
+59 silly addNameRange number 2 { name: 'grunt', range: '*', hasData: true }
+60 silly addNameRange versions [ 'grunt',
+60 silly addNameRange   [ '0.1.0',
+60 silly addNameRange     '0.1.1',
+60 silly addNameRange     '0.1.2',
+60 silly addNameRange     '0.2.0',
+60 silly addNameRange     '0.2.1',
+60 silly addNameRange     '0.2.2',
+60 silly addNameRange     '0.2.3',
+60 silly addNameRange     '0.2.4',
+60 silly addNameRange     '0.2.5',
+60 silly addNameRange     '0.2.6',
+60 silly addNameRange     '0.2.7',
+60 silly addNameRange     '0.2.8',
+60 silly addNameRange     '0.2.9',
+60 silly addNameRange     '0.2.10',
+60 silly addNameRange     '0.2.11',
+60 silly addNameRange     '0.2.12',
+60 silly addNameRange     '0.2.13',
+60 silly addNameRange     '0.2.14',
+60 silly addNameRange     '0.2.15',
+60 silly addNameRange     '0.3.0',
+60 silly addNameRange     '0.3.1',
+60 silly addNameRange     '0.3.2',
+60 silly addNameRange     '0.3.3',
+60 silly addNameRange     '0.3.4',
+60 silly addNameRange     '0.3.5',
+60 silly addNameRange     '0.3.6',
+60 silly addNameRange     '0.3.7',
+60 silly addNameRange     '0.3.8',
+60 silly addNameRange     '0.3.9',
+60 silly addNameRange     '0.3.10',
+60 silly addNameRange     '0.3.11',
+60 silly addNameRange     '0.3.12',
+60 silly addNameRange     '0.3.13',
+60 silly addNameRange     '0.3.14',
+60 silly addNameRange     '0.3.15',
+60 silly addNameRange     '0.3.16',
+60 silly addNameRange     '0.3.17',
+60 silly addNameRange     '0.4.0',
+60 silly addNameRange     '0.4.1',
+60 silly addNameRange     '0.4.2',
+60 silly addNameRange     '0.4.3',
+60 silly addNameRange     '0.4.4',
+60 silly addNameRange     '0.4.5',
+60 silly addNameRange     '0.3.13-a',
+60 silly addNameRange     '0.4.0-a',
+60 silly addNameRange     '0.4.0-rc1',
+60 silly addNameRange     '0.4.0-rc2',
+60 silly addNameRange     '0.4.0-rc3',
+60 silly addNameRange     '0.4.0-rc4',
+60 silly addNameRange     '0.4.0-rc5',
+60 silly addNameRange     '0.4.0-rc6',
+60 silly addNameRange     '0.4.0-rc7',
+60 silly addNameRange     '0.4.0-rc8' ] ]
+61 verbose addNamed [ 'grunt', '0.4.5' ]
+62 verbose addNamed [ '0.4.5', '0.4.5' ]
+63 silly lockFile 81abf7ad-grunt-0-4-5 grunt@0.4.5
+64 verbose lock grunt@0.4.5 C:\Users\rlobo\AppData\Roaming\npm-cache\81abf7ad-grunt-0-4-5.lock
+65 silly lockFile 81abf7ad-grunt-0-4-5 grunt@0.4.5
+66 silly lockFile 81abf7ad-grunt-0-4-5 grunt@0.4.5
+67 silly lockFile 55f1ff24-grunt grunt@
+68 silly lockFile 55f1ff24-grunt grunt@
+69 error 404 404 Not Found: g-
+69 error 404
+69 error 404 'g-' is not in the npm registry.
+69 error 404 You should bug the author to publish it
+69 error 404 It was specified as a dependency of 'cuantoqueda'
+69 error 404
+69 error 404 Note that you can also install from a
+69 error 404 tarball, folder, or http url, or git url.
+70 error System Windows_NT 6.1.7601
+71 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "g-" "grunt"
+72 error cwd C:\Users\rlobo\Documents\personal\cuantoQueda
+73 error node -v v0.10.32
+74 error npm -v 1.4.28
+75 error code E404
+76 verbose exit [ 1, true ]
