@@ -39,7 +39,7 @@
             	$('.guardarAjax').click(function(){
                     var action = $(this).attr("data-tbl");
             		$.ajax({
-					    url: '/index.php/api/'+action+'/format/json',
+					    url: '/api.php/api/'+action+'/format/json',
 					    type: 'POST',
 					    data: JSON.stringify({ action: "add", idUsuario: "ronald", password: "root" }),
                         contentType: "application/json",
@@ -51,7 +51,7 @@
                 $('.obtenerTodosAjax').click(function(){
                     var action = $(this).attr("data-tbl");
                     $.ajax({
-                        url: '/index.php/api/'+action+'/format/json',
+                        url: '/api.php/api/'+action+'/format/json',
                         type: 'GET',
                         success: function(result) {
                             console.log(result);
@@ -61,7 +61,7 @@
                 $('.obtenerUnoAjax').click(function(){
                     var action = $(this).attr("data-tbl");
                     $.ajax({
-                        url: '/index.php/api/'+action+'/format/json',
+                        url: '/api.php/api/'+action+'/format/json',
                         type: 'GET',
                         data: {idUsuario: "ronald2"},
                         contentType: "application/json",
@@ -73,7 +73,7 @@
                 $('.updateUnoAjax').click(function(){
                     var action = $(this).attr("data-tbl");
                     $.ajax({
-                        url: '/index.php/api/'+action+'/format/json',
+                        url: '/api.php/api/'+action+'/format/json',
                         type: 'POST',
                         data: JSON.stringify({ action: "update", idUsuario: "ronald", password: "root1" }),
                         contentType: "application/json",
